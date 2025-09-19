@@ -5,7 +5,7 @@ Welcome to the **News Summerizer** app! This Android application fetches news ar
 ## Download
 
 <p align="center">
-    <a href="https://github.com/noureddinelaghribe/news-summerizer/raw/refs/heads/main/News-Summerizer.apk">
+    <a href="https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/master/app.apk">
         <img src="https://raw.githubusercontent.com/noureddinelaghribe/WriteFlow/refs/heads/main/download_apk.png" alt="Download APK" height="80">
     </a>
 </p>
@@ -16,15 +16,15 @@ Welcome to the **News Summerizer** app! This Android application fetches news ar
 
 Here are some screenshots of the News Summerizer app:
 
-| Screenshot 1                                                                                                      | Screenshot 2                                                                                                      | Screenshot 3                                                                                                      |
-| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| ![Screenshot 1](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/main/photo_1.jpg) | ![Screenshot 2](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/main/photo_2.jpg) | ![Screenshot 3](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/main/photo_3.jpg) |
+| Screenshot 1                                                                                                        | Screenshot 2                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| ![Screenshot 1](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/master/photo_1.jpg) | ![Screenshot 2](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/master/photo_2.jpg) |
 
-| Screenshot 4                                                                                                      | Screenshot 5                                                                                                      | Screenshot 6                                                                                                      |
-| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| ![Screenshot 4](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/main/photo_4.jpg) | ![Screenshot 5](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/main/photo_5.jpg) | ![Screenshot 6](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/main/photo_6.jpg) |
+| Screenshot 3                                                                                                        | Screenshot 4                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| ![Screenshot 3](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/master/photo_3.jpg) | ![Screenshot 4](https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/master/photo_4.jpg) |
 
-> Replace the image links above with the correct screenshot filenames from your repo if they differ.
+> Replace the image links above if you add more screenshots to the repo.
 
 ## Features
 
@@ -55,6 +55,74 @@ This project follows a simple **MVC** pattern to keep responsibilities clear and
 
 > You can migrate to **MVVM** easily by introducing `ViewModel` classes and `StateFlow`/`LiveData` for better separation when the app grows.
 
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/noureddinelaghribe/news-summerizer.git
+cd news-summerizer
+```
+
+2. Open the project in Android Studio and let Gradle sync.
+3. Provide API keys and configuration if your app uses a news-provider or external summarization service (see **Configuration**).
+
+## Configuration
+
+Store secrets locally and never commit them. Example in `local.properties`:
+
+```
+NEWS_API_KEY=your_news_api_key_here
+SUMMARIZER_API_KEY=your_summary_api_key_here
+```
+
+Load these values in Gradle and expose them via `BuildConfig` or read them at runtime. Alternatively, use an encrypted keystore or environment variables for CI builds.
+
+## Run the app
+
+* Run directly from Android Studio on an emulator or physical device.
+
+```bash
+./gradlew installDebug
+```
+
+## Build APK / Release
+
+To build a debug APK:
+
+```bash
+./gradlew assembleDebug
+```
+
+To build a signed release APK, configure your signing configs and keystore, then:
+
+```bash
+./gradlew assembleRelease
+```
+
+## Project structure (high level)
+
+```
+news-summerizer/
+├─ app/                 # Android application module
+├─ gradle/
+├─ build.gradle.kts
+├─ settings.gradle.kts
+├─ photo_*.jpg          # Screenshots (optional)
+└─ README.md
+```
+
+## Contributing
+
+Contributions are welcome! Suggested workflow:
+
+1. Fork the repo.
+2. Create a feature branch: `git checkout -b feat/your-feature`.
+3. Commit and push your changes.
+4. Open a Pull Request with a clear description and screenshots.
+
+Please follow Kotlin style guidelines and keep PRs focused.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -67,4 +135,4 @@ For technical support or feature requests, please contact:
 
 ---
 
-*This README was formatted to match the style of your Sweet Store README and tailored for the News Summerizer project. Update the download/screenshot links and configuration placeholders as needed.*
+\*This README was updated with your provided APK and screenshot l
