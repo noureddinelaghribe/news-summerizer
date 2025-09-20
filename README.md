@@ -52,7 +52,6 @@ This project follows a simple **MVC** pattern to keep responsibilities clear and
 * **View:** Activities and fragments that render the UI: headlines list, article detail, and summary view.
 * **Controller:** Handles user interactions, coordinates fetching articles, creating summaries, and updating the view. Controllers also manage navigation and share/save actions.
 
-> You can migrate to **MVVM** easily by introducing `ViewModel` classes and `StateFlow`/`LiveData` for better separation when the app grows.
 
 ## License
 
