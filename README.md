@@ -6,7 +6,7 @@ Welcome to the **News Summerizer** app! This Android application fetches news ar
 
 <p align="center">
     <a href="https://raw.githubusercontent.com/noureddinelaghribe/news-summerizer/refs/heads/master/app.apk">
-        <img src="https://raw.githubusercontent.com/noureddinelaghribe/WriteFlow/refs/heads/main/download_apk.png" alt="Download APK" height="80">
+        <img src="https://raw.githubusercontent.com/noureddinelaghribe/SMPOS/refs/heads/master/smpos/download_apk%20(2).png" alt="Get it on Google Play" height="80">
     </a>
 </p>
 
